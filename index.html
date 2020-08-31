@@ -1,174 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Paula's Personality Quiz</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+  <html lang="en-US">
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Economica&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+        rel="stylesheet"
+      />
+      <!-- TODO: Update the title of your website -->
+      <title>Paula Contreras' Personal Website</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Economica&display=swap"
-      rel="stylesheet"
-    />
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <h1>Who are you in a crime investigation?</h1>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="/styles.css" />
+      <script src="/script.js" defer></script>
+    </head>
+    <body>
+      <div class="containers" id="container-1">
+        <!-- TODO: Update the heading with the name of your website -->
+        <h1 class="main-title">Paula Contreras</h1>
+      </div>
 
-    <h2>How would you rather spend your time?</h2>
-    <div class="question">
-      <div class="answer-choice">
-        <img
-          src="https://cdn.glitch.com/8735a0b6-681c-4be7-9e03-db8848d96dfa%2F18ca5607-8b56-4f1e-94a7-1f0a6aa6ae5f.image.png?v=1596671391461"
-          alt="girl surrounded by instruments"
-        />
-        <br />
-        <button onclick = "disable1()" class = "q1" id="q1a1">Listening to music</button>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80"
-          alt="Handwriting"
-        />
-        <br />
-        <button onclick = "disable1()" class = "q1" id="q1a2">Manifesting</button>
+      <div class="containers">
+        <h2>
+          Welcome to my personal website!
+        </h2>
       </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1538131587570-641359811581?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=865&q=80"
-          alt="a blurry TV screen"
-        />
-        <br />
-        <button id="q1a3" class = "q1" onclick = "disable1()" >Binging a series</button>
+      <div class="containers">
+        <h3>
+          Let me tell you a little bit about myself.
+        </h3>
       </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1546521343-4eb2c01aa44b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-          alt="picture of a book"
-        />
+      <div>
         <br />
-        <button id="q1a4" class = "q1" onclick = "disable1()">Reading a book</button>
+        <p>
+          Hi! My name is <b>Paula Daniela Contreras</b>, and I am 17 years old.
+          I was born in <b>Bucaramanga, Colombia</b> I moved to the United
+          States last year, at the end of November. I am currently living in
+          Weston, Florida with my mom, dad, my little sister and my dog. I am
+          currently a rising senior and I am considering majoring in
+          <b>biomedical/mechanical/civil engineering.</b>
+          I love learning languages! My first language is <b>Spanish</b>, but I
+          speak English and German fluently and I am currently learning French
+          and Japanese, which is super hard! I also really enjoy listening to
+          music, playing the piano, reading books, starting TV shows and then
+          forgetting to finish them.
+        </p>
       </div>
-    </div>
 
-    <h2>Which has been your quarantine coping hobby?</h2>
-    <div class="question">
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1586195831572-9608b4f48230?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
-          alt="picture of baking tools"
-        />
-        <br />
-        <button id="q2a1" class = "q2" onclick = "disable2()">Stress baking</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1466027449668-27f96b692ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-          alt="embroidery kit"
-        />
-        <br />
-        <button onclick = "disable2()" class = "q2" id="q2a2">Learning to embroider</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1501680462452-7db64f318572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt="an empty stadium"
-        />
-        <br />
-        <button onclick = "disable2()" class = "q2" id="q2a3">Messing with presidents</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt="picture of plants"
-        />
-        <br />
-        <button onclick = "disable2()" class = "q2" id="q2a4">Gardening</button>
-      </div>
-    </div>
+      <!-- TODO: Continue to add content to your homepage using your wireframe as a guide.-->
+      <!-- TODO: Add a <div> container around sections of your homepage. -->
 
-    <h2>How does your room look like right now?</h2>
-    <div class="question">
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1588046130717-0eb0c9a3ba15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=719&q=80"
-          alt="a bright, clean room"
-        />
-        <br />
-        
-        <button onclick = "disable3()" class = "q3" id="q3a1">Pristine</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1515510621228-30de609bbd60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt="a sort of orginized room"
-        />
-        <br />
-        <button onclick = "disable3()" class = "q3" id="q3a2">Walkable</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://i.pinimg.com/originals/65/10/4e/65104e4cfdcbcd9c66d7e1018a8aabfa.jpg"
-          alt="a really messy room"
-        />
-        <br />
-        <button onclick = "disable3()" class = "q3" id="q3a3">Disastrous</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://cdn.ebaumsworld.com/picture/xxyzz/mess16.jpg"
-          alt="a worryingly messy room"
-        />
-        <br />
-        <button onclick = "disable3()" class = "q3" id="q3a4">Retail stores post black friday</button>
-      </div>
-    </div>
-
-    <h2>Which most closely resembles your aesthetic?</h2>
-    <div class="question">
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-          alt="a bright, clean room"
-        />
-        <br />
-        <button onclick = "disable4()" class = "q4" id="q4a1">Soft</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1503658926055-f0196ef40713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt="a sort of orginized room"
-        />
-        <br />
-        <button onclick = "disable4()" class = "q4" id="q4a2">Alt</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1560546076-e7fdff1bee79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=699&q=80"
-          alt="a really messy room"
-        />
-        <br />
-        <button onclick = "disable4()" class = "q4" id="q4a3">Cottagecore</button>
-      </div>
-      <div class="answer-choice">
-        <img
-          src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-          alt="a worryingly messy room"
-        />
-        <br />
-        <button onclick = "disable4()" class = "q4" id="q4a4">Academia</button>
-      </div>
-    </div>
-
-    <div class="result">
-      <h2 id="result">Your result is...</h2>
-      <br>
-    </div>
-    <button id="restart">
-        Restart
-      </button>
-  </body>
+      <!-- TODO: Add a navigation bar  -->
+    </body>
+  </html>
 </html>
